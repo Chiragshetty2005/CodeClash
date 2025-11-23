@@ -1,16 +1,55 @@
-# React + Vite
+# CodeClash
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CodeClash is a modern, animation-heavy landing page for a coding competition / challenge platform.  
+It’s built to feel fast, polished, and a little dramatic — with smooth transitions, bold typography, and an experience that feels more like a product than a simple static site.
 
-Currently, two official plugins are available:
+🌐 **Live Site:** https://codeclash-chirag.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Hero Section with Motion**
+  - Eye-catching hero with animated text and subtle motion to grab attention immediately.
+- **Section-Based Layout**
+  - Clear sections for problem themes, event/track details, how-it-works, and calls-to-action.
+- **Smooth Animations**
+  - Micro-interactions and scroll-based transitions that keep the page feeling alive.
+- **Responsive Design**
+  - Fully responsive layout that works across desktop, tablet, and mobile devices.
+- **Reusable Components**
+  - Modular components for cards, buttons, sections, and layout to keep the codebase clean.
 
-## Expanding the ESLint configuration
+> _Note: You can tweak the copy to match the exact structure/content of your current CodeClash page._
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠 Tech Stack
+
+- **Framework:** React (with Vite as the build tool)
+- **Styling:** Tailwind CSS
+- **Animations:** GSAP / Framer Motion (depending on what you used)
+- **Deployment:** Netlify
+
+If you used anything extra (e.g., React Icons, custom fonts, etc.), you can extend this list.
+
+---
+
+## 📂 Project Structure
+
+A typical structure for this project looks like:
+
+```bash
+CodeClash/
+├── public/
+│   └── assets/          # Static assets (images, icons, etc.)
+├── src/
+│   ├── components/      # Reusable UI components (buttons, cards, sections)
+│   ├── sections/        # Page sections (Hero, About, Tracks, Footer, etc.)
+│   ├── styles/          # Global styles / Tailwind config (if any custom files)
+│   ├── App.jsx          # Main app entry
+│   └── main.jsx         # React + Vite bootstrap
+├── package.json
+├── tailwind.config.cjs / tailwind.config.js
+├── postcss.config.cjs / postcss.config.js
+└── vite.config.js
